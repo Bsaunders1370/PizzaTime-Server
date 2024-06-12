@@ -4,6 +4,9 @@
   "description": "PizzaTime API Server",
   "main": "index.js",
   "scripts": {
+    "start": "node index2.js",
+    "run-dev": "nodemon index2.js",
+    "populate-db": "node setup-scripts/populate-db.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +20,15 @@
   },
   "homepage": "https://github.com/TooeleTechSoftDev/PizzaTime-Server#readme",
   "dependencies": {
+    "ajv": "^6.10.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongodb": "^3.3.0-beta2"
+    "express-jwt": "^5.3.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   }
 }
